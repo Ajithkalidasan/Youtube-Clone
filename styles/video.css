@@ -1,0 +1,88 @@
+/* Styles for the thumbnail image */
+.thumbnail {
+    width: 100%;
+}
+
+/* Styles for the video title */
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500; /* Bold font weight */
+    line-height: 20px; /* Line height */
+    margin-bottom: 10px;
+}
+
+/* Styles for the grid container for video information */
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr; /* 50px for the profile picture and 1fr for the rest of the information */
+}
+
+/* Styles for the profile picture */
+.profile-picture {
+    width: 36px;
+    border-radius: 50px; /* Rounded corners */
+}
+
+/* Styles for the thumbnail row */
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative; /* Relative positioning */
+}
+
+/* Styles for the video author and video stats */
+.video-author,
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96); /* Dark gray color */
+}
+
+/* Styles for the video author */
+.video-author {
+    margin-bottom: 4px;
+}
+
+/* Styles for the video grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columns for small screens */
+    column-gap: 16px; /* Gap between grid columns */
+    row-gap: 40px; /* Gap between grid rows */
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr; /* 2 columns for medium screens */
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columns for large screens */
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns for extra large screens */
+    }
+}
+
+/* Styles for the video time */
+.video-time {
+    font-family: Roboto, Arial; /* Fallback font family */
+    font-size: 12px;
+    font-weight: 500; /* Bold font weight */
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px; /* Rounded corners */
+    background-color: black; /* Black background color */
+    color: white; /* White text color */
+    position: absolute; /* Absolute positioning */
+    bottom: 8px; /* 8px from the bottom */
+    right: 5px; /* 5px from the right */
+
+}

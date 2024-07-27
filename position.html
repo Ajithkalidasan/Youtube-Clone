@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .static {
+            position: static;
+            background-color: lightblue;
+        }
+
+        .relative {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background-color: lightgreen;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            background-color: lightcoral;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: lightpink;
+        }
+
+        .container {
+            height: 2000px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">Static Position</div>
+    <div class="relative">Relative Position</div>
+    <div class="absolute">Absolute Position</div>
+    <div class="fixed">Fixed Position</div>
+    <div class="container">
+        <div class="sticky">Sticky Position</div>
+        Scroll to see sticky in action.
+    </div>
+</body>
+
+</html>
